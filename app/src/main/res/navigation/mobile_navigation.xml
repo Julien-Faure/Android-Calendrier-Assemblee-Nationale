@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="fr.assemblee.calendrier.ui.home.CalendarFragment"
+        android:label="@string/menu_calendrier"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="fr.assemblee.calendrier.ui.slideshow.InfosFragment"
+        android:label="@string/menu_infos"
+        tools:layout="@layout/fragment_infos" />
+</navigation>
